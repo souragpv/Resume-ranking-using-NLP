@@ -6,6 +6,10 @@ from preprocess import clean_text
 from vectorize import vectorize_documents
 from similarity import calculate_similarity
 from skill_matching import extract_keywords, skill_match_score
+import spacy
+
+nlp = spacy.load("en_core_web_sm")
+
 
 st.title("📄 Resume Ranking System using TF-IDF")
 
